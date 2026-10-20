@@ -1,0 +1,20 @@
+[project]
+name = "mlx-f1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ranveer Soni", email = "git@ranveersoni.me" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "mlx>=0.32.4",
+    "numpy>=2.5.4",
+]
+
+[project.scripts]
+mlx-f1 = "mlx_f1:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
